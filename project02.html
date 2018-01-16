@@ -22,10 +22,8 @@
     <script src="fonts/fontAwesome5/js/fontawesome.min.js"></script>
     <script src="fonts/fontAwesome5/js/fontawesome-all.min.js"></script>
     <!-- * Materialize CSS * -->
-    <!-- * Materialize CSS * -->
-    <!--<link rel="stylesheet" href="css/materialize/materialize.css">-->
+    <link rel="stylesheet" href="css/materialize/materialize.css">
     <script type="text/javascript" src="js/materialize/materialize.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 </head>
 
 
@@ -41,12 +39,13 @@
         <div class="cd-index cd-main-content">
 
             <!-- Page Content -->
-            <div id="page-content" class="light-content grain-page" data-bgcolor="#222" data-textcolor="#690000">
+            <div id="page-content" class="light-content grain-page" data-bgcolor="#797244" data-textcolor="#690000">
 
 
                 <!-- Header -->
                 <header class="scroll-hide">
                     <div id="header-container">
+
 
                         <!-- Logo -->
                         <div id="logo">
@@ -80,7 +79,7 @@
 
                             <div id="close-menu"></div>
 
-                            <div>
+                            <section>
                                 <ul class="main-menu">
                                     <li>
                                         <a class="ajax-link menu-link" data-type="page-transition" href="index.html"><span></span>Home</a>
@@ -92,10 +91,10 @@
                                         <a class="ajax-link menu-link" data-type="page-transition" href="contact.html"><span></span>Contact</a>
                                     </li>
                                     <li>
-                                        <a class="ajax-link menu-link"  data-type="page-transition" href="project02.html"><span></span>Testimonial</a>
+                                        <a class="ajax-link menu-link" data-type="page-transition" href="project02.html"><span></span>Testimonial</a>
                                     </li>
                                 </ul>
-                            </div>
+                            </section>
 
                             <p class="copyright">2018 &copy; Consumer Convenience Technologies, LLC. All rights reserved.</p>
 
@@ -149,13 +148,18 @@
                         <!-- Row -->
                         <div class="vc_row row_padding_top row_padding_bottom">
 
-                            <div class="container">
 
-                                <video class="responsive-video" controls>
-                                    <source src="videos/testimonials/leslie-mann-test.mp4" type="video/mp4"/>
-                                </video>
+                            <!--<div class="container">-->
 
+                            <div class="row">
+                                <div class="col s12">
+                                    <div class="video-container">
+                                        <iframe width="1280" height="720" src="https://www.youtube.com/embed/c2JOqFWzvjQ?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                    </div>
+                                </div>
                             </div>
+
+                            <!--</div>-->
 
                         </div>
                         <!--/Row -->
@@ -163,10 +167,12 @@
 
                         <div id="project-nav" class="has-animation" data-delay="100">
 
-                            <a class="ajax-link project-next" data-type="page-transition" href="project03.html">
-                                <div class="nav-project-title">Retroduck</div>
-                                <div class="nav-title">next</div>
 
+                            <a class="ajax-link project-next" data-type="page-transition" href="project03.html">
+                                <div class="nav-project-title">Who we are?
+                                    <i class="fa fa-arrow-circle-right" style="vertical-align:middle;"></i></div>
+                                <div class="nav-title">next
+                                    <i class="fal fa-arrow-circle-right" style="vertical-align:middle;"></i></div>
                             </a>
                         </div>
 
@@ -192,8 +198,8 @@
                             <ul class="socials-text">
                                 <li><a href="http://www.facebook.com/clapat" target="_blank">Facebook</a></li>
                                 <li><a href="http://www.twitter.com/clapatdesign" target="_blank">Twitter</a></li>
-                                <li><a href="http://www.dribbble.com/clapat" target="_blank">Dribbble</a></li>
-                                <li><a href="http://www.behance.net/clapat" target="_blank">Behance</a></li>
+                                <!--<li><a href="http://www.dribbble.com/clapat" target="_blank">Dribbble</a></li>-->
+                                <!--<li><a href="http://www.behance.net/clapat" target="_blank">Behance</a></li>-->
                             </ul>
                         </div>
 
@@ -202,7 +208,7 @@
                             6450 Poe Avenue, Suite 513 Dayton, OH 45410
                             <br><br>
                             443.758.5466<br>
-                            <a class="link" href="mailto:contact@cctclosures.com">contact@cctclosures.com</a>
+                            <a class="link" href="mailto:contact@cctclosures.com?subject=Contact | cctclosures.com">contact@cctclosures.com</a>
                         </div>
 
                     </footer>
