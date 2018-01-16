@@ -72,7 +72,7 @@ section {
 }
 
 audio,
-canvas,
+canvas
 {
     display: inline-block;
     max-width: 100%;
@@ -673,6 +673,10 @@ a:hover {
 	02. Page Overlay
 ---------------------------------------------------*/
 
+ul.main-menu >li > a.menu-link:hover, ul.main-menu >li > a.menu-link:active  {
+    text-decoration: underline;
+}
+
 .page-overlay {
     position: fixed;
     top: 0;
@@ -942,7 +946,7 @@ header.open.nav-hide {
     bottom: 0;
 }
 
-nav, nav ul, nav ul li, nav ul li a {
+section, section ul, section ul li, section ul li a {
     margin: 0;
     padding: 0;
     border: 0;
@@ -953,20 +957,20 @@ nav, nav ul, nav ul li, nav ul li a {
     box-sizing: border-box;
 }
 
-nav {
+section {
     width: auto;
     float: none;
     display: table;
     margin: 0 auto;
 }
 
-nav ul ul {
+section ul ul {
     display: none;
     margin-bottom: 20px;
     position: relative;
 }
 
-nav > ul > li > a {
+section > ul > li > a {
     padding: 2px 0px;
     cursor: pointer;
     color: #000;
@@ -982,18 +986,18 @@ nav > ul > li > a {
     transition: all 0.3s ease-in-out;
 }
 
-.light-content nav > ul > li > a, .light-content.color-content nav > ul > li > a {
+.light-content section > ul > li > a, .light-content.color-content section > ul > li > a {
     color: #fff;
 }
 
-nav > ul > li {
+section > ul > li {
     width: auto;
     display: table;
     margin: 0 auto;
     padding: 0 5px;
 }
 
-nav > ul > li span {
+section > ul > li span {
     position: absolute;
     top: 27px;
     left: -5px;
@@ -1005,35 +1009,35 @@ nav > ul > li span {
     transition: transform .2s ease-out;
 }
 
-.light-content nav > ul > li span {
+.light-content section > ul > li span {
     opacity: 0.4;
 }
 
-.light-content.color-content nav > ul > li span {
+.light-content.color-content section > ul > li span {
     opacity: 1;
 }
 
-nav > ul > li:hover span, nav > ul > li.active span, nav > ul > li.open span {
+section > ul > li:hover span, section > ul > li.active span, section > ul > li.open span {
     transform: scaleX(1);
     transform-origin: left;
 }
 
-.light-content nav > ul > li > a:hover,
-.light-content nav > ul > li.active > a,
-.light-content nav > ul > li.open > a,
-.light-content.color-content nav > ul > li > a:hover,
-.light-content.color-content nav > ul > li.active > a,
-.light-content.color-content nav > ul > li.open > a {
+.light-content section > ul > li > a:hover,
+.light-content section > ul > li.active > a,
+.light-content section > ul > li.open > a,
+.light-content.color-content section > ul > li > a:hover,
+.light-content.color-content section > ul > li.active > a,
+.light-content.color-content section > ul > li.open > a {
     color: #fff;
 }
 
-nav > ul > li > a:hover,
-nav > ul > li.active > a,
-nav > ul > li.open > a {
+section > ul > li > a:hover,
+section > ul > li.active > a,
+section > ul > li.open > a {
     color: #000;
 }
 
-nav ul ul li a {
+section ul ul li a {
     cursor: pointer;
     padding: 10px 20px 2px;
     z-index: 1;
@@ -1043,22 +1047,22 @@ nav ul ul li a {
     line-height: 20px !important;
 }
 
-nav ul ul li:hover > a,
-nav ul ul li.open > a,
-nav ul ul li.active > a {
+section ul ul li:hover > a,
+section ul ul li.open > a,
+section ul ul li.active > a {
     color: #000;
 }
 
-.light-content nav ul ul li:hover > a,
-.light-content nav ul ul li.open > a,
-.light-content nav ul ul li.active > a,
-.light-content.color-content nav ul ul li:hover > a,
-.light-content.color-content nav ul ul li.open > a,
-.light-content.color-content nav ul ul li.active > a {
+.light-content section ul ul li:hover > a,
+.light-content section ul ul li.open > a,
+.light-content section ul ul li.active > a,
+.light-content.color-content section ul ul li:hover > a,
+.light-content.color-content section ul ul li.open > a,
+.light-content.color-content section ul ul li.active > a {
     color: #fff;
 }
 
-nav ul ul ul li a {
+section ul ul ul li a {
     padding-left: 40px;
 }
 
@@ -1596,13 +1600,13 @@ footer {
 @media only screen and (max-width: 1466px) {
 
     /* Header And Footer */
-    .menu-overlay.slide-in nav {
+    .menu-overlay.slide-in section {
         width: 40vw;
         -webkit-transform: translateX(40vw);
         transform: translateX(40vw);
     }
 
-    .menu-overlay nav.open {
+    .menu-overlay section.open {
         -webkit-transform: translateX(0);
         transform: translateX(0);
     }
@@ -1772,12 +1776,12 @@ footer {
         top: 35px;
     }
 
-    nav > ul > li > a {
+    section > ul > li > a {
         line-height: 48px;
         font-size: 36px;
     }
 
-    nav > ul > li span {
+    section > ul > li span {
         position: absolute;
         top: 23px;
     }

@@ -26,7 +26,6 @@
     margin: 30px 40px;
     opacity: 1;
     position: relative;
-    opacity: 0;
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
 }
@@ -202,14 +201,24 @@
     width: 100%;
     display: block;
     text-align: left;
-    padding: 40px 40px 140px 40px;
+    padding: 40px 40px 50px 40px;
     box-sizing: border-box;
     height: auto;
     top: 0;
     left: 0;
-    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#a6000000', GradientType=0); /* IE6-9 */
+}
+
+.item-caption:hover {
+    -webkit-transition: background 1s;
+    -moz-transition: background 1s;
+    -ms-transition: background 1s;
+    -o-transition: background 1s;
+    transition: background 1s;
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#a6000000', GradientType=0); /* IE6-9 */
 }
 
@@ -375,13 +384,8 @@
     text-align: center;
 }
 
-.item-overlay.contact-us {
-    margin-top: 120px;
-    float: right;
-}
-
 .zipper .item:hover .item-cat {
-    margin-top: 0px;
+    margin-top: 0;
 }
 
 .zipper .item-cat {
@@ -658,7 +662,7 @@
 @media only screen and (max-width: 1466px) {
 
     .item-caption {
-        padding: 30px 30px 100px 30px;
+        padding: 30px 30px 60px 30px;
     }
 
 }
