@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="8244e23b-f7da-4d57-9e00-526ddd0efed2" name="beta.cctclosures.com v2 admin" url="http://server125.web-hosting.com">
+        <fileTransfer host="server125.web-hosting.com" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
